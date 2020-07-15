@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1-assignment question "console functions"</title>
+</head>
+<body>
+    <script>
+        //console functions
+    var a=10;
+    var d1={name:"sam",age:"12"};
+    var d2={name:"ram",age:"17"};
+    document.write(a);
+    //console.time  is used to display time taken by the code
+    console.time('timetaken');   
+    console.log(a);
+      //console.log(b) ;// here b is not defined
+    console.log("Hello,here are the console functions")
+       //console.error is used to display the error message
+    console.error("this is an error ");
+   //console.warn is used to log warning msg to the console
+    console.warn("warning!!");
+   //console.table is used to generate the table inside a console
+    console.table({d1,d2});
+    //console customs is used to style the content inside the console
+    console.log("%c life is beautiful",'color :purple');
+    console.timeEnd('timetaken');
+    //console.count is used  to count the no of times func hits
+    for(let i=0;i<3;i++)
+    console.count(i);
+    //console.clear is used to clear entire console
+    console.clear();
+   
+    
+    </script>
+
+
+</body>
+</html>
