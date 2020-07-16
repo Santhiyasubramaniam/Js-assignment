@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day2 Assignment question 2</title>
+</head>
+<body>
+    
+    <script>
+       //String functions-chartAt()
+    var str="life is full";
+    var msg="of surprises and miracles";
+    // charAt-find the char at index
+    console.log(str.charAt(6));
+    //replace-replace the exit string to new string
+    console.log(msg.replace(' of surprises and miracles','pains and problems'));
+    //search-find the substring in in the given string
+    console.log(msg.search('miracles'));
+    //slice-returns the substring which is required
+    console.log(str.slice(0,4));
+    //subtring-returns the string between "from" and "to" index
+    let txt="learn to code";
+    txt=txt.substring(1,12); 
+    console.log(txt);
+    //repeat- it repeats the string respect to the count mentioned
+    var text="lets Upgrade";
+    text.repeat(3);
+    //trim - used to removes the whitespace in the string
+    var string="            be yourself"
+    console.log(string.trim());
+    //split- used to seperate string inti array of substring
+    console.log(text.split(""));
+    
+// Array Methods
+
+      var color=["black","white","blue","orange","purple"];
+     //tostring-converts array to a string
+      console.log(color.toString());
+      //join -converts array to a string with arequired seperator
+      console.log(color.join("#"));
+      //splice-add new items to array
+      console.log(color.splice(2,0,"pink","green"));
+      let arr=[1,3,2,4,5];
+      //slice-it gives the subarrays
+      console.log(arr.slice(1,4));
+      let users=[{id:1,name:"ram"},{id:2,name:"sam"},{id:3,name:"vicky"}];
+      //sort-used to reorder the array elements
+      console.log(arr.sort());
+      //reverse-used to reverse the array
+      console.log(arr.reverse());
+      //negative indexing property
+      console.log(arr[arr.length-1]);
+
+     
+
+    </script>
+</body>
+</html>
