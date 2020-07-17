@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 assignment-question3</title>
+</head>
+<body>
+    <script>
+        // grades-using conditinal statement and ternary
+        let marks=prompt("Enter the marks obtained");
+        console.log(marks);
+        //using condition if else statements
+        if(marks>=80 && marks<=100)
+        {
+            console.log(`Marks are ${marks} and grade is A`);
+        }
+        else if(marks>=50 && marks<80)
+        {
+            console.log(`Marks are ${marks} and grade is B`);
+        }
+        else{
+            console.log(`Marks are ${marks} and grade is C`);
+        }
+
+
+
+        //using ternary operator
+        let res= marks>=50?'B':'C';
+        console.log(`Marks are ${marks} and grade is ${res}`);
+        
+    </script>
+</body>
+</html>
