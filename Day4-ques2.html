@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 Assignment-question 2</title>
+</head>
+<body>
+    <script>
+        // Destructuring the following objects
+        
+        const student={
+            name:"Helsinki",
+            age:24,
+            projects:
+            {
+                dicegame:"Two players dice game using javascript"
+                }
+        };
+    
+        const {name,age}=student;
+        console.log(name,age)
+        const{projects:{dicegame}}=student;
+        console.log(dicegame);
+
+    </script>
+    
+</body>
+</html>
