@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Assignment -question 7</title>
+</head>
+<body>
+    <script>
+        //prime numbers between 2 to n
+        let num=prompt("enter a number");
+      
+        for (i=1;i<=num;i++)
+        {
+            if(i==1)
+            continue;
+            flag=1;
+            for(j=2;j<=i/2;j++)
+            {
+            if(i%j==0)
+           {
+               flag=0;
+               break;
+           }
+           }
+        
+        if(flag==1)
+        console.log(i);
+        }
+        
+    
+    </script>
+    
+</body>
+</html>

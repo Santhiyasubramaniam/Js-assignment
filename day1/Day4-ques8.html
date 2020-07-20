@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 Assignment-question 8</title>
+</head>
+<body>
+    <script>
+        //arrow functions
+        function ask(ques,yes,no)
+        {
+            if(confirm(ques)) yes()
+            else no();
+        }
+        ask(
+            "Do you agree?",
+            () =>alert("you agreed"),
+           () =>alert("you cancelled the execution ")
+        );
+    </script>
+    
+</body>
+</html>
