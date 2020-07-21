@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5 Assignment -quetion 2</title>
+</head>
+<body>
+    <script>
+        //OOPS
+        class Users{
+            constructor(name,age,email)
+            {
+                this.name=name;
+                this.age=age;
+                this.email=email;
+                this.lucoins=0;
+                this.courses=[];
+
+            }
+            login()
+            {
+                console.log(`${this.name} has logged in`);
+                return this;
+            }
+            logout()
+            {
+                console.log(`${this.name} has logged out`);
+                return this;
+            }
+            userdetails()
+            {
+                console.log(` name:${this.name},email:${this.email},age:${this.age},coins:${this.lucoins},course:${this.courses}`)
+            }
+        }
+            class Moderator extends Users{
+                constructor(name,age,email){
+                    super(name,age,email);
+                }
+                addcoins(user,coins)
+                {
+                    
+                    this.lucoins++;
+                    console.log(`${this.name} has ${this.lucoins} coins`);
+                    return this;
+                }
+
+                removecoins(user)
+                {
+                    this.lucoins--;
+                    console.log(`${this.name} has ${this.lucoins} coins`);
+                    return this;
+                }
+            }
+          class Admin extends Moderator{
+              addcourse(user,course){
+                  user.courses.push(course);
+                  console.log(user);
+              }
+              removecourse(user,course){
+                  user.courses.pop(course);
+                  console.log(user);
+              }
+          }
+          let user1= new Users('vinoth',26,'vino15@gmail.com');
+          let user2= new Users('Ram',29,'ram34@gmail.com');
+          let user3= new Users('Gowtham',23,'gwthm3@gmail.com');
+          let user4= new Users('karthick',21,'karthi05@gmail.com');
+          let mod= new Moderator('swathy',28,'swathy66@gmail.com');
+          let admin=new Admin('krishna',29,'krish34@gmail.com');
+          let users=[user1,user2,user3,user4,mod,admin];
+
+          users.forEach(el =>{
+              console.log(el);
+          });
+
+          
+          admin.addcourse(user1,'javascript');
+          admin.addcourse(user1,'python');
+          admin.addcourse(user2,'blockchain');
+          
+
+          user1.login();
+          user1.userdetails();
+          user1.logout();
+
+          mod.addcoins(user2,1);
+          mod.addcoins(user2);
+          mod.removecoins(user2);
+
+         
+          admin.removecourse(user2,'blockchain');
+          admin.removecourse(user1,'javascript');
+          
+              </script>
+    
+</body>
+</html>

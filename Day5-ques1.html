@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 Assignment-question 1</title>
+</head>
+<body>
+    <script>
+        //higher order functions
+        
+        let num=prompt("enter a num");
+        let arr=[];
+        for(i=0;i<=num;i++)
+        {
+          arr[i]=i;
+        }
+        console.log(arr);
+        let odd=arr.filter(el=>el%2!=0);
+        console.log(odd);
+        let cube=arr.filter(el=>el%2!=0).map(el=>(el**2)*el);
+        console.log(cube);
+       
+    </script>
+    
+</body>
+</html>
