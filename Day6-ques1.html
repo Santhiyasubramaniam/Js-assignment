@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 Assignment-question1</title>
+
+    <script>
+        var count=0;
+        function color()
+        {
+            setTimeout("change()",5000);
+        }
+        function change()
+        {
+            var a=new Array('wheat','beige','lightgray','lightyellow','lightblue');
+            if(count<=6)
+            {
+                document.bgColor=a[count++];
+                setTimeout("change()",5000);
+            }
+            else{
+                count=0;
+                color();
+            }
+        }
+
+    </script></head>
+   <body bgColor=gray onload=color()>
+       <h1> changing backgrounds</h1>
+       <p>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum sed ut ea unde odio reiciendis labore a rem dolorum, ad, consectetur recusandae nam doloribus ab officiis iusto odit repellat sequil!Lorem ipsum!!
+       </p>
+    </body>
+</html>
