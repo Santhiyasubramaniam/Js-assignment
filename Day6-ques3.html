@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 Assignment -Question3</title>
+</head>
+<body onload=tym();>
+    <h3 id="time"></h3>
+  
+    <style>
+        body{
+            padding:10px;
+            background-color: white;
+            color:black;
+        }
+        .dark-mode{
+            background-color: black;
+            color:white;
+        }
+    </style>
+    <script>
+        let name=prompt("Enter your name");
+        
+        if (name!=null)
+          {
+           document.write("Welcome  "  +name+  "! have a nice day");
+           }
+        function dark()
+        {
+            var color=document.body;
+            color.classList.toggle("dark-mode");
+        }
+        
+
+        const ctime=document.getElementById('time');
+
+        function tym(){
+            let date=new Date();
+            let time=date.tolocateTimeString();
+            ctime.innerText=time;
+        }
+       
+        setInterval(clock,1000);
+    
+
+
+    </script>
+        <br>
+        <p> click here to switch the mode of a page</p>
+       <button onclick = "dark()">mode</button>
+    
+</body>
+</html>
